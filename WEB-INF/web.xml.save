@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+        <servlet>
+                 <servlet-name>Testing</servlet-name>
+                <servlet-class>testingServlet</servlet-class>
+        </servlet>
+        <servlet>
+                <servlet-name>tell-me-username-and-password</servlet-name>
+                <servlet-class>userNamePass</servlet-class>
+        </servlet>
+        <servlet-mapping>
+                <servlet-name>Testing</servlet-name>
+                <url-pattern>/welcome</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+                <servlet-name>tell-me-username-and-password</servlet-name>
+                <url-pattern>tell-me-username-and-password</url-pattern>
+        </servlet-mapping>
+<webapp>                                                                        

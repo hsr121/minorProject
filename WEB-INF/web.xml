@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+        <servlet>
+                 <servlet-name>Testing</servlet-name>
+                <servlet-class>testingServlet</servlet-class>
+        </servlet>
+        
+        <servlet>
+                 <servlet-name>NamePass</servlet-name>
+                <servlet-class>userNamePass</servlet-class>
+        </servlet>
+        
+        <servlet>
+                 <servlet-name>Login</servlet-name>
+                <servlet-class>loginChecker</servlet-class>
+        </servlet>
+        
+        <servlet>
+                 <servlet-name>SpaceShooter</servlet-name>
+                <servlet-class>spaceShooter</servlet-class>
+        </servlet>
+        
+        
+        <servlet-mapping>
+                <servlet-name>Testing</servlet-name>
+                <url-pattern>/welcome</url-pattern>
+        </servlet-mapping>
+        
+        <servlet-mapping>
+                <servlet-name>NamePass</servlet-name>
+                <url-pattern>/tell-me-username-and-password</url-pattern>
+        </servlet-mapping>
+        
+        <servlet-mapping>
+                <servlet-name>Login</servlet-name>
+                <url-pattern>/login</url-pattern>
+        </servlet-mapping>
+        
+        <servlet-mapping>
+                <servlet-name>SpaceShooter</servlet-name>
+                <url-pattern>/SpaceShooter</url-pattern>
+        </servlet-mapping>
+        
+        <resource-ref>
+	      <description>DB Connection</description>
+	      <res-ref-name>jdbc/Games</res-ref-name>
+	      <res-type>javax.sql.DataSource</res-type>
+	      <res-auth>Container</res-auth>
+	  </resource-ref>
+        
+</web-app>
+
